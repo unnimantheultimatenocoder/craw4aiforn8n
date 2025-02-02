@@ -90,7 +90,7 @@ def get_pydantic_ai_docs_urls():
     Returns:
         List[str]: List of URLs from the sitemap
     """            
-    sitemap_url = "https://docs.crawl4ai.com/sitemap.xml"
+    sitemap_url = "https://docs.langflow.org/sitemap.xml"
     try:
         response = requests.get(sitemap_url)
         response.raise_for_status()
