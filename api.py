@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import List, Optional, Dict
+from typing import List, Optional
+from urllib.parse import urlparse
 import asyncio
 import os
 from multiple_pages import FullSiteCrawler
@@ -9,7 +10,7 @@ app = FastAPI(title="CRAWL4AI-PROJECT API")
 
 class CrawlRequest(BaseModel):
     urls: List[str]
-    max_pages: Optional[int] = 10
+    max_pages: Optional[int] = 100
     output_dir: Optional[str] = "crawled_docs"
 
 @app.get("/health")
@@ -21,36 +22,46 @@ async def health_check():
 async def crawl_websites(request: CrawlRequest):
     """Crawl multiple websites asynchronously and return content"""
     try:
-        output_dir = request.output_dir
-        os.makedirs(output_dir, exist_ok=True)
-
-        crawler = FullSiteCrawler(output_dir=output_dir)
+        # Create output directory if it doesn't exist
+        os.makedirs(request.output_dir, exist_ok=True)
+        
+        crawler = FullSiteCrawler(output_dir=request.output_dir)
         results = []
-        all_data = [] # Added: List to store data for all URLs
+        content_data = []
 
         for url in request.urls:
             try:
+                # Crawl the website
                 await crawler.crawl_website(url, max_pages=request.max_pages)
-
-                # Read content from saved files
-                website_dir = os.path.join(output_dir, crawler.domain_name(url))  # Correct directory name
-                website_data = []
-                for filename in os.listdir(website_dir):
-                    if filename.endswith(".txt"):  # Assuming you save as .txt
-                        filepath = os.path.join(website_dir, filename)
-                        try:
-                            with open(filepath, "r", encoding="utf-8") as f:  # Handle encoding
-                                content = f.read()
-                            website_data.append({"filename": filename, "content": content})
-                        except Exception as e:
-                            print(f"Error reading file {filename}: {e}") # Log the error
-
+                
+                # Get domain folder name
+                domain = urlparse(url).netloc.replace('.', '_')
+                site_dir = os.path.join(request.output_dir, domain)
+                
+                # Read all markdown files in the directory
+                site_content = []
+                if os.path.exists(site_dir):
+                    for filename in os.listdir(site_dir):
+                        if filename.endswith('.md'):
+                            file_path = os.path.join(site_dir, filename)
+                            try:
+                                with open(file_path, 'r', encoding='utf-8') as f:
+                                    content = f.read()
+                                    site_content.append({
+                                        'url': url,
+                                        'filename': filename,
+                                        'content': content
+                                    })
+                            except Exception as e:
+                                print(f"Error reading file {filename}: {str(e)}")
+                
+                content_data.extend(site_content)
                 results.append({
                     "url": url,
                     "status": "completed",
-                    "success": True
+                    "success": True,
+                    "files_processed": len(site_content)
                 })
-                all_data.append({"url": url, "data": website_data}) # Append data for this URL
             except Exception as e:
                 results.append({
                     "url": url,
@@ -62,8 +73,8 @@ async def crawl_websites(request: CrawlRequest):
         return {
             "status": "completed",
             "results": results,
-            "data": all_data,  # Return the crawled data
-            "output_directory": os.path.abspath(output_dir)
+            "content": content_data,
+            "output_directory": os.path.abspath(request.output_dir)
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
