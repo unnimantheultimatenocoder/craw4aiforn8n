@@ -1,119 +1,62 @@
-[Crawl4AI Documentation (v0.4.3bx)](https://docs.crawl4ai.com/<https:/docs.crawl4ai.com/>)
-  * [ Home ](https://docs.crawl4ai.com/<.>)
-  * [ Quick Start ](https://docs.crawl4ai.com/<core/quickstart/>)
-  * [ Search ](https://docs.crawl4ai.com/<#>)
+[Skip to main content](https://docs.langflow.org/<#__docusaurus_skipToContent_fallback>)
+[![Langflow](https://docs.langflow.org/img/langflow-logo-black.svg)](https://docs.langflow.org/</>)
+[](https://docs.langflow.org/<https:/github.com/langflow-ai/langflow>)[](https://docs.langflow.org/<https:/twitter.com/langflow_ai>)[](https://docs.langflow.org/<https:/discord.gg/EqksyE2EX9>)
+Search...
+CTRLK
+[![Langflow](https://docs.langflow.org/img/langflow-logo-black.svg)](https://docs.langflow.org/</>)
+  * [Welcome to Langflow](https://docs.langflow.org/</>)
+  * [Get started](https://docs.langflow.org/<#>)
+  * [Starter projects](https://docs.langflow.org/<#>)
+  * [Tutorials](https://docs.langflow.org/<#>)
+  * [Concepts](https://docs.langflow.org/<#>)
+  * [Components](https://docs.langflow.org/<#>)
+  * [Agents](https://docs.langflow.org/<#>)
+  * [Configuration](https://docs.langflow.org/<#>)
+  * [Deployment](https://docs.langflow.org/<#>)
+  * [Integrations](https://docs.langflow.org/<#>)
+  * [Contributing](https://docs.langflow.org/<#>)
+  * [API reference](https://docs.langflow.org/<#>)
+  * [Changelog](https://docs.langflow.org/<#>)
 
 
-  * Home
-  * Setup & Installation
-    * [Installation](https://docs.crawl4ai.com/<core/installation/>)
-    * [Docker Deployment](https://docs.crawl4ai.com/<core/docker-deploymeny/>)
-  * [Quick Start](https://docs.crawl4ai.com/<core/quickstart/>)
-  * Blog & Changelog
-    * [Blog Home](https://docs.crawl4ai.com/<blog/>)
-    * [Changelog](https://docs.crawl4ai.com/<https:/github.com/unclecode/crawl4ai/blob/main/CHANGELOG.md>)
-  * Core
-    * [Simple Crawling](https://docs.crawl4ai.com/<core/simple-crawling/>)
-    * [Crawler Result](https://docs.crawl4ai.com/<core/crawler-result/>)
-    * [Browser & Crawler Config](https://docs.crawl4ai.com/<core/browser-crawler-config/>)
-    * [Markdown Generation](https://docs.crawl4ai.com/<core/markdown-generation/>)
-    * [Fit Markdown](https://docs.crawl4ai.com/<core/fit-markdown/>)
-    * [Page Interaction](https://docs.crawl4ai.com/<core/page-interaction/>)
-    * [Content Selection](https://docs.crawl4ai.com/<core/content-selection/>)
-    * [Cache Modes](https://docs.crawl4ai.com/<core/cache-modes/>)
-    * [Local Files & Raw HTML](https://docs.crawl4ai.com/<core/local-files/>)
-    * [Link & Media](https://docs.crawl4ai.com/<core/link-media/>)
-  * Advanced
-    * [Overview](https://docs.crawl4ai.com/<advanced/advanced-features/>)
-    * [File Downloading](https://docs.crawl4ai.com/<advanced/file-downloading/>)
-    * [Lazy Loading](https://docs.crawl4ai.com/<advanced/lazy-loading/>)
-    * [Hooks & Auth](https://docs.crawl4ai.com/<advanced/hooks-auth/>)
-    * [Proxy & Security](https://docs.crawl4ai.com/<advanced/proxy-security/>)
-    * [Session Management](https://docs.crawl4ai.com/<advanced/session-management/>)
-    * [Multi-URL Crawling](https://docs.crawl4ai.com/<advanced/multi-url-crawling/>)
-    * [Crawl Dispatcher](https://docs.crawl4ai.com/<advanced/crawl-dispatcher/>)
-    * [Identity Based Crawling](https://docs.crawl4ai.com/<advanced/identity-based-crawling/>)
-    * [SSL Certificate](https://docs.crawl4ai.com/<advanced/ssl-certificate/>)
-  * Extraction
-    * [LLM-Free Strategies](https://docs.crawl4ai.com/<extraction/no-llm-strategies/>)
-    * [LLM Strategies](https://docs.crawl4ai.com/<extraction/llm-strategies/>)
-    * [Clustering Strategies](https://docs.crawl4ai.com/<extraction/clustring-strategies/>)
-    * [Chunking](https://docs.crawl4ai.com/<extraction/chunking/>)
-  * API Reference
-    * [AsyncWebCrawler](https://docs.crawl4ai.com/<api/async-webcrawler/>)
-    * [arun()](https://docs.crawl4ai.com/<api/arun/>)
-    * [arun_many()](https://docs.crawl4ai.com/<api/arun_many/>)
-    * [Browser & Crawler Config](https://docs.crawl4ai.com/<api/parameters/>)
-    * [CrawlResult](https://docs.crawl4ai.com/<api/crawl-result/>)
-    * [Strategies](https://docs.crawl4ai.com/<api/strategies/>)
+  * [](https://docs.langflow.org/</>)
+  * Welcome to Langflow
 
 
-  * [🚀🤖 Crawl4AI: Open-Source LLM-Friendly Web Crawler & Scraper](https://docs.crawl4ai.com/<#crawl4ai-open-source-llm-friendly-web-crawler-scraper>)
-  * [Quick Start](https://docs.crawl4ai.com/<#quick-start>)
-  * [What Does Crawl4AI Do?](https://docs.crawl4ai.com/<#what-does-crawl4ai-do>)
-  * [Documentation Structure](https://docs.crawl4ai.com/<#documentation-structure>)
-  * [How You Can Support](https://docs.crawl4ai.com/<#how-you-can-support>)
-  * [Quick Links](https://docs.crawl4ai.com/<#quick-links>)
+On this page
+# Welcome to Langflow
+Langflow is a new, visual framework for building multi-agent and RAG applications. It is open-source, Python-powered, fully customizable, and LLM and vector store agnostic.
+Its intuitive interface allows for easy manipulation of AI building blocks, enabling developers to quickly prototype and turn their ideas into powerful, real-world solutions.
+Langflow empowers developers to rapidly prototype and build AI applications with its user-friendly interface and powerful features. Whether you're a seasoned AI developer or just starting out, Langflow provides the tools you need to bring your AI ideas to life.
+## Visual flow builder[​](https://docs.langflow.org/<#visual-flow-builder> "Direct link to Visual flow builder")
+Langflow is an intuitive visual flow builder. This drag-and-drop interface allows developers to create complex AI workflows without writing extensive code. You can easily connect different components, such as prompts, language models, and data sources, to build sophisticated AI applications.
+![Langflow in action](https://docs.langflow.org/assets/images/playground-response-91229e908f0650f9a0d2a6ca5bf2d4e5.png)
+## Use cases[​](https://docs.langflow.org/<#use-cases> "Direct link to Use cases")
+Langflow can be used for a wide range of AI applications, including:
+  * [Craft intelligent chatbots](https://docs.langflow.org/</tutorials-memory-chatbot>)
+  * [Build document analysis systems](https://docs.langflow.org/</tutorials-document-qa>)
+  * [Generate compelling content](https://docs.langflow.org/</tutorials-blog-writer>)
+  * [Orchestrate multi-agent applications](https://docs.langflow.org/</starter-projects-simple-agent>)
 
 
-# 🚀🤖 Crawl4AI: Open-Source LLM-Friendly Web Crawler & Scraper
-[ ![unclecode%2Fcrawl4ai | Trendshift](https://trendshift.io/api/badge/repositories/11716) ](https://docs.crawl4ai.com/<https:/trendshift.io/repositories/11716>)
-[ ![GitHub Stars](https://img.shields.io/github/stars/unclecode/crawl4ai?style=social) ](https://docs.crawl4ai.com/<https:/github.com/unclecode/crawl4ai/stargazers>) [ ![GitHub Forks](https://img.shields.io/github/forks/unclecode/crawl4ai?style=social) ](https://docs.crawl4ai.com/<https:/github.com/unclecode/crawl4ai/network/members>) [ ![PyPI version](https://badge.fury.io/py/crawl4ai.svg) ](https://docs.crawl4ai.com/<https:/badge.fury.io/py/crawl4ai>)
-[ ![Python Version](https://img.shields.io/pypi/pyversions/crawl4ai) ](https://docs.crawl4ai.com/<https:/pypi.org/project/crawl4ai/>) [ ![Downloads](https://static.pepy.tech/badge/crawl4ai/month) ](https://docs.crawl4ai.com/<https:/pepy.tech/project/crawl4ai>) [ ![License](https://img.shields.io/github/license/unclecode/crawl4ai) ](https://docs.crawl4ai.com/<https:/github.com/unclecode/crawl4ai/blob/main/LICENSE>)
-Crawl4AI is the #1 trending GitHub repository, actively maintained by a vibrant community. It delivers blazing-fast, AI-ready web crawling tailored for large language models, AI agents, and data pipelines. Fully open source, flexible, and built for real-time performance, **Crawl4AI** empowers developers with unmatched speed, precision, and deployment ease.
-> **Note** : If you're looking for the old documentation, you can access it [here](https://docs.crawl4ai.com/<https:/old.docs.crawl4ai.com>).
-## Quick Start
-Here's a quick example to show you how easy it is to use Crawl4AI with its asynchronous capabilities:
-```
-import asyncio
-from crawl4ai import AsyncWebCrawler
-async def main():
-  # Create an instance of AsyncWebCrawler
-  async with AsyncWebCrawler() as crawler:
-    # Run the crawler on a URL
-    result = await crawler.arun(url="https://crawl4ai.com")
-    # Print the extracted content
-    print(result.markdown)
-# Run the async main function
-asyncio.run(main())
-
-```
-
-## What Does Crawl4AI Do?
-Crawl4AI is a feature-rich crawler and scraper that aims to:
-1. **Generate Clean Markdown** : Perfect for RAG pipelines or direct ingestion into LLMs. 2. **Structured Extraction** : Parse repeated patterns with CSS, XPath, or LLM-based extraction. 3. **Advanced Browser Control** : Hooks, proxies, stealth modes, session re-use—fine-grained control. 4. **High Performance** : Parallel crawling, chunk-based extraction, real-time use cases. 5. **Open Source** : No forced API keys, no paywalls—everyone can access their data. 
-**Core Philosophies** : - **Democratize Data** : Free to use, transparent, and highly configurable. - **LLM Friendly** : Minimally processed, well-structured text, images, and metadata, so AI models can easily consume it.
-## Documentation Structure
-To help you get started, we’ve organized our docs into clear sections:
-  * **Setup & Installation** Basic instructions to install Crawl4AI via pip or Docker. 
-  * **Quick Start** A hands-on introduction showing how to do your first crawl, generate Markdown, and do a simple extraction. 
-  * **Core** Deeper guides on single-page crawling, advanced browser/crawler parameters, content filtering, and caching. 
-  * **Advanced** Explore link & media handling, lazy loading, hooking & authentication, proxies, session management, and more. 
-  * **Extraction** Detailed references for no-LLM (CSS, XPath) vs. LLM-based strategies, chunking, and clustering approaches. 
-  * **API Reference** Find the technical specifics of each class and method, including `AsyncWebCrawler`, `arun()`, and `CrawlResult`.
+## Community and support[​](https://docs.langflow.org/<#community-and-support> "Direct link to Community and support")
+Join Langflow's vibrant community of developers and AI enthusiasts. See the following resources to join discussions, share your projects, and get support:
+  * [Contribute to Langflow](https://docs.langflow.org/</contributing-how-to-contribute>)
+  * [Langflow Discord Server](https://docs.langflow.org/<https:/discord.gg/EqksyE2EX9>)
+  * [@langflow_ai](https://docs.langflow.org/<https:/twitter.com/langflow_ai>)
 
 
-Throughout these sections, you’ll find code samples you can **copy-paste** into your environment. If something is missing or unclear, raise an issue or PR.
-## How You Can Support
-  * **Star & Fork**: If you find Crawl4AI helpful, star the repo on GitHub or fork it to add your own features. 
-  * **File Issues** : Encounter a bug or missing feature? Let us know by filing an issue, so we can improve. 
-  * **Pull Requests** : Whether it’s a small fix, a big feature, or better docs—contributions are always welcome. 
-  * **Join Discord** : Come chat about web scraping, crawling tips, or AI workflows with the community. 
-  * **Spread the Word** : Mention Crawl4AI in your blog posts, talks, or on social media. 
+## Get started with Langflow[​](https://docs.langflow.org/<#get-started-with-langflow> "Direct link to Get started with Langflow")
+  * [Install Langflow](https://docs.langflow.org/</get-started-installation>)
+  * [Quickstart](https://docs.langflow.org/</get-started-quickstart>)
 
 
-**Our mission** : to empower everyone—students, researchers, entrepreneurs, data scientists—to access, parse, and shape the world’s data with speed, cost-efficiency, and creative freedom.
-## Quick Links
-  * **[GitHub Repo](https://docs.crawl4ai.com/<https:/github.com/unclecode/crawl4ai>)**
-  * **[Installation Guide](https://docs.crawl4ai.com/<core/installation/>)**
-  * **[Quick Start](https://docs.crawl4ai.com/<core/quickstart/>)**
-  * **[API Reference](https://docs.crawl4ai.com/<api/async-webcrawler/>)**
-  * **[Changelog](https://docs.crawl4ai.com/<https:/github.com/unclecode/crawl4ai/blob/main/CHANGELOG.md>)**
+[NextInstall Langflow](https://docs.langflow.org/</get-started-installation>)
+  * [Visual flow builder](https://docs.langflow.org/<#visual-flow-builder>)
+  * [Use cases](https://docs.langflow.org/<#use-cases>)
+  * [Community and support](https://docs.langflow.org/<#community-and-support>)
+  * [Get started with Langflow](https://docs.langflow.org/<#get-started-with-langflow>)
 
 
-Thank you for joining me on this journey. Let’s keep building an **open, democratic** approach to data extraction and AI together.
-Happy Crawling! — _Unclecode, Founder & Maintainer of Crawl4AI_
-Site built with [MkDocs](https://docs.crawl4ai.com/<http:/www.mkdocs.org>) and [Terminal for MkDocs](https://docs.crawl4ai.com/<https:/github.com/ntno/mkdocs-terminal>). 
-##### Search
-xClose
-Type to start searching
+Hi, how can I help you?
+![](https://docs.langflow.org/img/langflow-icon-black-transparent.svg)
