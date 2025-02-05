@@ -9,7 +9,7 @@ app = FastAPI(title="CRAWL4AI-PROJECT API")
 
 class CrawlRequest(BaseModel):
     urls: List[str]
-    max_pages: Optional[int] = 100
+    max_pages: Optional[int] = 10
     output_dir: Optional[str] = "crawled_docs"
 
 @app.get("/health")
