@@ -4,7 +4,7 @@ from crawl4ai import *
 async def main():
     async with AsyncWebCrawler() as crawler:
         result = await crawler.arun(
-            url="https://claude.ai/chat/b965fd82-24bf-4628-85e8-4bb37bff24a2",
+            url="https://docs.datastax.com/en/langflow/index.html",
         )
         print(result.markdown)
 
